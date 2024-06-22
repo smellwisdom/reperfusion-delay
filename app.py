@@ -56,7 +56,7 @@ pre_treat_tici_grade_map = {
 }
 
 # Streamlit 应用程序接口
-st.title("Patient reperfusion delay Prediction")
+# st.title("Patient reperfusion delay Prediction")
 
 st.markdown("""
 <style>
@@ -110,7 +110,7 @@ if st.button('Predict'):
     # st.markdown('<p class="big-font">Prediction Result:</p>', unsafe_allow_html=True)
     # st.write(f"Based on feature values, predicted probability of HI is {prediction_prob * 100:.2f}%")
     # 使用 HTML 和内联 CSS 来设置文本的样式
-    prediction_text = f"Based on feature values, predicted probability of reperfusion delay is {prediction_prob * 100:.2f}%"
+    prediction_text = f"Based on feature values, predicted probability of surgical delay is {prediction_prob * 100:.2f}%"
     st.markdown(f'<p style="font-size:45px; font-weight: bold;">{prediction_text}</p>',
                 unsafe_allow_html=True)
 
